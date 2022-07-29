@@ -1,0 +1,13 @@
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 150px 1fr;
+    border: 1px solid #888;
+    min-height: 100vh;
+}
+.sidebar {
+    grid-row: 1/-1;
+    background: url(imgs/bgphoto.jpg) no-repeat center;
+    background-size: cover;
+
+}
