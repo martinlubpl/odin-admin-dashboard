@@ -72,9 +72,7 @@ body {
     padding: 1rem;
     display: flex;
 }
-.top div {
-    /* border: 1px solid #666; */
-}
+
 .search img {
     width: 20px;
 }
@@ -145,3 +143,80 @@ body {
     cursor: pointer;
     
 } 
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.projects {
+    grid-row: 1/-1;
+    /* padding: 1rem; */
+}
+.projects h3 {
+    margin-top:0.5rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.project-grid div {
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right-sidebar {
+    padding-right: 1rem;
+    margin-bottom: 1rem; ;
+}
+.right-sidebar>h3, .trending>h3 {
+    margin: 0.5rem;
+}
+.right-sidebar .card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #eee;
+    box-shadow: 5px 5px 5px #ddd;
+}
+.right-sidebar .card h4, .right-sidebar .card p {
+    margin: 0.5rem 0;
+}
+
+.right-sidebar .card p {
+    font-size: 0.9rem;
+    font-weight: 400;
+
+}
+.card hr {
+    margin: 1.2rem 0;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 1rem;
+}
+.trending img {
+    width: 50px;
+    border: 2px solid #009CFF;
+    border-radius: 100%;
+
+}
